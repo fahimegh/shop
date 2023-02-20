@@ -19,6 +19,7 @@
 
 body{
     margin: 0;
+    direction: rtl;
 }
 
 .container{
@@ -122,5 +123,54 @@ a{
 }
 .page_intro_left img{
     width: 100%;
-    height: 300px;  
+    height: 300px;
+    background-image: none;  
+}
+.new_posts{
+
+}
+.new_posts h1{
+    margin: 20px 0;
+    font-weight: 400;
+}
+.new_post{
+    float: right;
+    width: 25%;
+    height: auto;
+    padding: 15px;
+
+}
+.new_post_card{
+    width: 100%;
+    height: 335px;
+    box-shadow: 1px 2px 3px #bbb;
+
+}
+.new_post_pic{
+    width: 100%;
+    height: 250px;
+    
+}
+.new_post_pic img{
+    width: 100%;
+    height: 250px;
+
+}
+.new_post_title{
+    float: right;
+    margin: 15px;
+}
+.new_post_price{
+    float: left;
+    margin: 15px;
+    text-decoration: line-through;
+}
+.new_post_description{
+    float: right;
+    margin: 0 15px;
+
+}
+.new_post_price_off{
+    float: left;
+    margin: 0 15px;
 }
