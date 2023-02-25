@@ -118,7 +118,7 @@ a {
   font-weight: 400;
 }
 .page_intro_right_btns {
-  margin: 250px;
+  margin-top: 250px;
   width: 300px;
   display: flex;
 }
@@ -250,6 +250,98 @@ a {
   font-size: 16px;
   color: #666;
 }
+/* footer */
+.main_footer{
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  padding: 20px 0;
+}
+.main_footer_f_l{
+  width: 30%;
+  height: auto;
+  padding: 15px;
+  float: right;
+}
+.main_footer_card h4{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+
+}
+.main_footer_card p{
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  
+}
+.main_footer_mid{
+  width: 20%;
+  height: auto;
+  padding: 15px;
+  float: right;
+}
+
+.main_footer_card ul li{
+  margin-bottom: 3px;
+}
+.main_footer_card ul li a{
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  
+}
+.main_footer_card ul li span{
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  
+}
+.main_footer_f_l img{
+  width: 120px;
+  height: 90px;
+  
+}
+.main_footer_card_namad h4{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+  
+}
+.footer_line{
+  border-color: #7f7f7f;
+}
+.footer_under{
+  text-align: right;
+  padding-top: 20px;
+  
+}
+.footer_under p{
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.footer_under img{
+  width: 25px;
+  height: auto;
+  color: #fff;
+  margin: 3px;
+}
+
+.footer_social_item{
+  float: left;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1150px) {
   .col_4 {
@@ -269,6 +361,31 @@ a {
   }
   .col_4 {
     width: 50%;
+  }
+  .main_footer_f_l{
+    width: 50%;
+   
+  }
+  .main_footer_mid{
+    width: 50%;
+   
+  }
+  .page_intro_left{
+    display: none;
+  }
+  .page_intro_right{
+    width: 100%;
+  }
+  .page_intro br{
+    display: none;
+  }
+  .page_intro_right h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 59px;
+  }
+  .page_intro_right_btns{
+    text-align: center;
   }
 }
 @media screen and (max-width: 950px) {
@@ -298,9 +415,22 @@ a {
   .col_4 {
     width: 100%;
   }
+  .main_footer_f_l{
+    width: 100%;
+   
+  }
+  .main_footer_mid{
+    width: 100%;
+   
+  }
+ 
+
 }
 @media screen and (max-width: 350px) {
   .container {
     padding: 0 20px;
+  }
+  .page_intro_right_btns{
+    margin: 0;
   }
 }
