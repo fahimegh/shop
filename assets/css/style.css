@@ -385,7 +385,22 @@ a {
   float: left;
 }
 
-
+/* single.html */
+.breadcrumbs{
+  padding: 20px 0;
+  background-color: #eee;
+}
+/* .breadcrumbs a::after{
+  content: '';
+  display: inline-block;
+  background: url(../images/icons/left-chevron.png);
+} */
+.breadcrumbs img{
+  width: 10px;
+  height: auto;
+  color: #777;
+  vertical-align: -2px;
+}
 
 
 
