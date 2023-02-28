@@ -403,11 +403,13 @@ a {
 }
 /* single product */
 .single_product{
-  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  
 }
 .single_product_right{
   width: 50%;
-  height: 500px;
+  height: auto;
   margin: auto;
   float: right;
 }
@@ -419,12 +421,12 @@ a {
 .single_product_pic img{
   width: 400px;
   height: auto;
-  border: 1px solid #aaa
+  border: 1px solid #ddd
   
 }
 .single_product_left{
   width: 50%;
-  height: 500px;
+  height: auto;
  
   float: right;
 }
@@ -433,10 +435,14 @@ a {
   font-size: 22px;
   margin-bottom: 10px;
 }
-.single_product_price{
+.single_product_price span{
   font-size: 18px;
   color: #777;
   margin-bottom: 10px;
+}
+.single_product_price p{
+  font-weight: 400;
+  font-size: 18px;
 }
 .single_product_sizes{
   margin-bottom: 10px;
@@ -444,6 +450,8 @@ a {
 }
 .single_product_sizes p{
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
   
 }
 .single_product_size{
@@ -462,7 +470,41 @@ a {
 }
 .single_product_props p{
   font-weight: 400;
+  font-size: 18px;
 }
+.single_product_description{
+  margin-bottom: 10px;
+}
+.single_product_description span{
+  font-weight: 400;
+  font-size: 18px;
+}
+.single_product_description p{
+  width: 75%;
+  text-align: justify;
+  color: #777;
+}
+.single_product_btn{
+  margin-bottom: 10px;
+}
+.single_product_btn button{
+  background-color: #00bf6f;
+  font-size: 18px;
+  width: 200px;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+ 
+  
+
 
 
 
@@ -514,6 +556,20 @@ a {
   .page_intro_right_btns{
     text-align: center;
   }
+  .single_product_right{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .single_product_left{
+    width: 100%;
+  }
+  .single_product_pic{
+    width: 100%;
+    text-align: center;
+  }
+  .single_product_pic img{
+    width: 400px;
+  }
 }
 @media screen and (max-width: 950px) {
   .container {
@@ -553,6 +609,15 @@ a {
  
 
 }
+@media screen and (max-width: 420px) {
+  .single_product_btn button{
+    width: 100%;
+  }
+  .single_product_pic img{
+    width: 290px;
+    
+  }
+}
 @media screen and (max-width: 350px) {
   .container {
     padding: 0 20px;
@@ -561,3 +626,4 @@ a {
     margin: 0;
   }
 }
+
