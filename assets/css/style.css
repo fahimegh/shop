@@ -386,6 +386,9 @@ a {
 }
 
 /* single.html */
+.color_red{
+  color: rgb(230, 66, 66) !important;
+}
 .breadcrumbs{
   padding: 20px 0;
   background-color: #eee;
@@ -502,14 +505,217 @@ a {
   cursor: pointer;
   margin-bottom: 15px;
 }
+.single_coments{
+  padding: 30px 0;
+}
+.single_coment{
+  background-color: #f9fafb;
+  height: auto;
+  padding: 0 15px;
+  padding-bottom: 20px;
+}
+.single_coments h5{
+  font-weight: 400;
+  font-size: 18px;
+ margin-bottom: 20px;
+}
+
+.sigle_coment_item{
+  height: auto;
+  border-bottom: 1px solid #aaa;
+  padding: 35px 84px 20px 0;
+  position: relative;
+
+}
+.sigle_coment_item:last-child{
  
+  border-bottom: none;
   
 
+}
 
+.sigle_coment_item img{
+  width: 50px;
+  height: auto;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+.single_coment_name_date {
+  margin-bottom: 10px;
+}
+.single_coment_name_date span{
+  color: #777;
+}
+.single_coment_name_date span:first-child{
+  margin-left: 30px;
+  color: #222;
+  font-weight: 400;
+}
+.single_coment_text{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.single_coment_good{
+  color: #00bf6f;
+  font-size: 22px;
+}
+/* contact_us */
+.contact_us{
+ padding-top: 30px;
+}
+.contact_us h1{
+  margin-bottom: 20px;
+  font-size: 26px;
+  padding-right: 15px;
+  padding-left: 15px;
 
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact_inputs{
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.contact_inputs label{
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+.contact_inputs input{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.contact_message{
+  width: 100%; 
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.contact_message label{
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+.contact_message textarea{
+  width: 100%;
+  height: 50px;
+  min-height: 150px;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.contact_btn input{
+  border: none;
+  cursor:pointer;
+  color: #fff;
+  background-color: #0080ff;
+  padding: 7px 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+ .contact_us hr{
+  border: 1px solid #ccc
+  /* margin-top: 30px; 
+  margin-left: 15px;
+ margin-right: 15px; */
+}
+.contact_info{
+  margin-bottom: 30px;
+}
+.contact_info h2{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.contact_info_right{
+  width: 50%;
+  height: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contact_info_right address{
+  font-size: 20px;
+}
+.contact_info_right a{
+  font-size: 20px;
+}
+.contact_info_right p{
+  font-size: 20px;
+}
+.contact_info_right hr{
+  margin: 20px 0 ;
+}
+.contact_info_left{
+  width: 50%;
+  height: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 0 100px;
+}
 
-
-
+.contact_info_left img{
+  width: 100%;
+  height: auto;
+}
+/* panel */
+.main_panel header{
+  box-shadow: 0px 2px 3px #ccc;
+  width: 100%;
+  height: 60px;
+}
+.panel_head{
+  display: flex;
+  justify-content: space-between;
+}
+.panel_head p{
+  padding-top: 15px;
+}
+.user_name{
+  padding-top: 5px;
+}
+.user_name span{
+  vertical-align:18px ;
+  margin-left: 5px;
+}
+.user_name img{
+  width: 50px;
+  height: auto;
+}
+.panel_sidebar{
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  background-color: #222;
+  right: 0;
+  top: 60px;
+  z-index: 999;
+}
+.panel_body{
+  padding-right: 240px;
+  background-color: #00bf6f;
+}
 
 
 @media screen and (max-width: 1150px) {
@@ -570,6 +776,7 @@ a {
   .single_product_pic img{
     width: 400px;
   }
+ 
 }
 @media screen and (max-width: 950px) {
   .container {
@@ -605,8 +812,23 @@ a {
   .main_footer_mid{
     width: 100%;
    
+  } 
+  .row{
+    flex-direction: column;
   }
- 
+  .flex_column{
+    flex-direction:column-reverse;
+  }
+  .contact_inputs{
+    width: 100%;
+  }
+  .contact_info_right {
+    width: 100%;
+  }
+  .contact_info_left {
+    width: 100%;
+    padding-right: 0;
+  }
 
 }
 @media screen and (max-width: 420px) {
