@@ -1,36 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>پنل تنظیمات</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
     <div class="main_panel">
-        <header>
-            <div class="container">
-                <div class="panel_head">
-                    <p>شاپ فهیمه</p>
-                    <div class="user_name">
-                        <span>fahime ghaforifar</span>
-                        <img src="../assets/images/user.png" alt="">
-                    </div>
-
-                </div>
-                
+      <header>
+        <div class="container">
+          <div class="panel_head">
+            <p>شاپ فهیمه</p>
+            <div class="user_name">
+              <span>fahime ghaforifar</span>
+              <img src="../assets/images/user.png" alt="" />
             </div>
-        </header>
-        <div class="panel_body">
-            <div class="panel_sidebar">
-                sddfdf
-            </div>
-            <div class="panel_body">
-                ffdf
-            </div>
+          </div>
         </div>
+      </header>
+      <div class="panel_body">
+        <div class="panel_sidebar">
+          <div class="panel_sidebar_pic">
+            <img src="../assets/images/logo.jpg" alt="" />
+          </div>
+          <div class="panel_sidebar_menu">
+            <ul>
+              <li>
+                <img src="../assets/images/icons/set.png" alt="" />
+                <a href="#">تنظیمات صفحه ی اصلی</a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/list.png" alt="" />
+                <a href="#">فهرست ها </a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/cat.jpg" alt="" />
+                <a href="#"> دسته ها </a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/dolar.png" alt="" />
+                <a href="#"> حسابداری </a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/product.png" alt="" />
+                <a href="#">محصولات</a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/price tag.png" alt="" />
+                <a href="#">کد تخفیف</a>
+              </li>
+              <li>
+                <img src="../assets/images/icons/off.png" alt="" />
+                <a href="#" style="color: #ff7171"> خروج</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel_sidebar_little">
+            <img src="../assets/images/logo.jpg" alt="">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/set.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/list.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/cat.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/dolar.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/product.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/price tag.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/off.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="panel_body">
+          <div class="panel_body_content">
+            <h1>تنظیمات اصلی</h1>
+            <form action="">
+              <div class="setting_inputs">
+                <label for="site_title">عنوان اصلی سایت</label>
+                <input id="site_title" type="text" name="siteTitle" />
+              </div>
+              <div class="setting_inputs">
+                <label for="first_color">انتخاب رنگ اصلی سایت</label>
+                <input id="first_color" type="color" name="firstColor" />
+              </div>
+              <div class="setting_inputs">
+                <label for="sec_color">انتخاب رنگ مکمل سایت</label>
+                <input id="sec_color" type="color" name="secColor" />
+              </div>
+              <div class="setting_inputs">
+                <label for="site_logo">انتخاب لوگوی اصلی سایت</label>
+                <input id="site_logo" type="file" name="siteLogo" />
+              </div>
+              <div class="setting_inputs">
+                <label for="info_text">متن قسمت معرفی سایت</label>
+                <input id="info_text" type="text" name="infoText" />
+              </div>
+              <input class="submit" value="ثبت" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
