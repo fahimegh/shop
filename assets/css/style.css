@@ -204,7 +204,7 @@ a {
 
 .new_post_card {
   width: 100%;
-  height: 335px;
+  height: 380px;
   box-shadow: 0px 1px 3px #bbb;
   background-color: #fff;
 }
@@ -837,6 +837,90 @@ vertical-align: -14px;
   
 }
 
+/* category */
+.cat_sec{
+  padding: 30px 0;
+}
+.cat_flex{
+  display: flex;
+}
+
+.cat_content{
+  width: 75%;
+  height: auto;
+ display: flex;
+ flex-wrap: wrap;
+}
+.cat_col_post{
+  width: calc(100%/3);
+  padding: 15px;
+  margin-bottom: 15px;
+ 
+}
+.cat_sidebar{
+  width: 25%;
+  height: auto;
+  
+}
+.cat_sidebar_filters{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #bbb;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.cat_sidebar_boxes{
+  padding:5px 5px 5px 0 ;
+  margin:15px 0;
+  border-bottom: 1px solid #ccc;
+ width: 100%;
+}
+.cat_sidebar_boxes:last-child{
+  border-bottom: none;
+}
+.cat_sidebar_boxes h3{
+  margin-bottom: 10;
+  font-size: 18px;
+  font-weight: 400;
+}
+.cat_sidebar_boxes ul li{
+  padding: 15px ;
+  
+}
+.cat_sidebar_boxes ul li input{
+  cursor: pointer;
+}
+.cat_sidebar_boxes ul li label{
+  padding-right: 5px ;
+  vertical-align: 3px;
+  cursor: pointer;
+  color: #777;
+}
+.pagination{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_item{
+  box-shadow: 0 1px 1px 1px #bbb;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination_item_selected{
+  background-color: #0080ff;
+}
+.pagination_item_selected span{
+  color: #fff;
+}
+
 
 
 
@@ -901,6 +985,27 @@ vertical-align: -14px;
   .single_product_pic img{
     width: 400px;
   }
+  .cat_flex{
+    flex-direction: column;
+  }
+  .cat_sidebar{
+    width: 100%;
+  }
+  .cat_content{
+    width: 100%;
+  }
+
+  .cat_col_post{
+    width: 50%
+   
+  }
+  .cat_sidebar_boxes{
+    padding:15px;
+    margin: 0;
+    border:none;
+    width: 50%;
+   
+  }
  
 }
 @media screen and (max-width: 950px) {
@@ -964,6 +1069,10 @@ vertical-align: -14px;
   .panel_body{
     padding-right: 35px;
   }
+  .cat_col_post{
+    width: 100%
+   
+  }
 
 }
 @media screen and (max-width: 420px) {
@@ -982,5 +1091,10 @@ vertical-align: -14px;
   .page_intro_right_btns{
     margin: 0;
   }
+  .setting_inputs input[type=text]{
+    width: 200px;
+    padding: 5px;
+  }
+  
 }
 
